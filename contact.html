@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0e0f10">
+  <link rel="icon" href="assets/images/brew-cafe-logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/brew-cafe-logo.png">
+  <title>Contact — BrewCycle Coffee</title>
+  <meta name="description" content="Send us a message to book BrewCycle Coffee for your event.">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Contact — BrewCycle Coffee">
+  <meta property="og:description" content="Send us a message to book BrewCycle Coffee for your event.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/latte-art.jpg">
+  <meta property="og:url" content="https://manzurul20021787.github.io/brewcycle-coffee/contact.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact — BrewCycle Coffee">
+  <meta name="twitter:description" content="Send us a message to book BrewCycle Coffee for your event.">
+  <meta name="twitter:image" content="assets/images/latte-art.jpg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="BrewCycle Coffee home">
+      <img class="logo-img" src="assets/images/brew-cafe-logo.png" alt="" width="32" height="32" decoding="async">
+      <span class="brand">BrewCycle Coffee</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" role="navigation" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a aria-current="page" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Contact us</h1>
+    <p class="lede">Booking enquiries, collaborations or just coffee talk — we’d love to hear from you.</p>
+    <p class="note small">Prototype notice: this form performs client-side validation only; no personal data is stored or transmitted.</p>
+
+    <form id="contactForm" class="contact-form" novalidate aria-describedby="formHelp" aria-labelledby="formTitle">
+      <h2 id="formTitle" class="sr-only">Send a message</h2>
+      <div class="field">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="80" placeholder="Alex Smith">
+        <small id="nameError" class="error" role="alert" aria-live="polite"></small>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+        <small id="emailError" class="error" role="alert" aria-live="polite"></small>
+      </div>
+      <div class="field">
+        <label for="phone">Phone (AU)</label>
+        <input id="phone" name="phone" type="tel" pattern="^(\+61|0)[2-478]\d{8}$" inputmode="tel" placeholder="04xx xxx xxx">
+        <small class="hint" id="formHelp">We’ll only use your details to reply to your enquiry.</small>
+      </div>
+      <div class="field">
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" required maxlength="120" placeholder="Book for a wedding in Sydney">
+        <small id="subjectError" class="error" role="alert" aria-live="polite"></small>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required minlength="10" rows="6" placeholder="Tell us about your event…"></textarea>
+        <small id="messageError" class="error" role="alert" aria-live="polite"></small>
+      </div>
+      <div class="actions">
+        <button type="submit" class="button">Send message</button>
+      </div>
+      <p id="formStatus" class="form-status" role="status" aria-live="polite" hidden></p>
+    </form>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> BrewCycle Coffee</p>
+      <ul class="social">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="mailto:hello@brewcycle.coffee">hello@brewcycle.coffee</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

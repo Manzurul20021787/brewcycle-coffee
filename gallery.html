@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0e0f10">
+  <link rel="icon" href="assets/images/brew-cafe-logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/brew-cafe-logo.png">
+  <title>Gallery — BrewCycle Coffee</title>
+  <meta name="description" content="Photos from markets, events and behind the scenes.">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Gallery — BrewCycle Coffee">
+  <meta property="og:description" content="Photos from markets, events and behind the scenes.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/truck-event-2.jpg">
+  <meta property="og:url" content="https://manzurul20021787.github.io/brewcycle-coffee/gallery.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gallery — BrewCycle Coffee">
+  <meta name="twitter:description" content="Photos from markets, events and behind the scenes.">
+  <meta name="twitter:image" content="assets/images/truck-event-2.jpg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="BrewCycle Coffee home">
+      <img class="logo-img" src="assets/images/brew-cafe-logo.png" alt="" width="32" height="32" decoding="async">
+      <span class="brand">BrewCycle Coffee</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" role="navigation" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a aria-current="page" href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Gallery</h1>
+    <p class="lede">Scenes from the road — tap a thumbnail to view larger.</p>
+
+    <ul class="thumb-grid" role="list">
+      <li>
+        <button class="thumb" aria-haspopup="dialog" data-full="assets/images/truck-event-1.jpg">
+          <img src="assets/images/truck-event-1.jpg" width="320" height="200" loading="lazy" alt="BrewCycle truck serving at an outdoor market">
+        </button>
+      </li>
+      <li>
+        <button class="thumb" aria-haspopup="dialog" data-full="assets/images/latte-art.jpg">
+          <img src="assets/images/latte-art.jpg" width="320" height="200" loading="lazy" alt="Swan latte art in a ceramic cup">
+        </button>
+      </li>
+      <li>
+        <button class="thumb" aria-haspopup="dialog" data-full="assets/images/beans-closeup.jpg">
+          <img src="assets/images/beans-closeup.jpg" width="320" height="200" loading="lazy" alt="Close-up of roasted coffee beans">
+        </button>
+      </li>
+      <li>
+        <button class="thumb" aria-haspopup="dialog" data-full="assets/images/truck-event-2.jpg">
+          <img src="assets/images/truck-event-2.jpg" width="320" height="200" loading="lazy" alt="Customers gathered around the coffee truck">
+        </button>
+      </li>
+    </ul>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" tabindex="-1" hidden>
+      <div class="lightbox-backdrop" data-close></div>
+      <figure class="lightbox-figure">
+        <img id="lightbox-img" alt="Expanded gallery image">
+        <figcaption id="lightbox-caption"></figcaption>
+        <button class="lightbox-close" aria-label="Close" data-close>&times;</button>
+      </figure>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> BrewCycle Coffee</p>
+      <ul class="social">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

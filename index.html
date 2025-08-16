@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0e0f10">
+  <link rel="icon" href="assets/images/brew-cafe-logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/brew-cafe-logo.png">
+  <title>BrewCycle Coffee — Mobile Coffee Truck</title>
+  <meta name="description" content="BrewCycle Coffee is a mobile coffee truck serving specialty coffee across events and locations in Australia.">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="BrewCycle Coffee — Mobile Coffee Truck">
+  <meta property="og:description" content="Specialty coffee on wheels. Find us at markets and events across Australia.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-coffee-truck.jpg">
+  <meta property="og:url" content="https://manzurul20021787.github.io/brewcycle-coffee/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BrewCycle Coffee — Mobile Coffee Truck">
+  <meta name="twitter:description" content="Specialty coffee on wheels. Find us at markets and events across Australia.">
+  <meta name="twitter:image" content="assets/images/hero-coffee-truck.jpg">
+  <!-- Structured Data: Local Business -->
+  <!-- JSON-LD -->
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"CafeOrCoffeeShop",
+    "name":"BrewCycle Coffee",
+    "@id":"https://manzurul20021787.github.io/brewcycle-coffee/",
+    "url":"https://manzurul20021787.github.io/brewcycle-coffee/",
+    "image":"https://manzurul20021787.github.io/brewcycle-coffee/assets/images/hero-coffee-truck.jpg",
+    "areaServed":"Australia",
+    "description":"Mobile coffee truck serving specialty coffee at events and locations in Australia.",
+    "sameAs":[]
+  }</script>
+  <link rel="preload" as="image" href="assets/images/hero-coffee-truck.jpg">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/images/brew-cafe-logo.png" type="image/png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="BrewCycle Coffee home">
+        <img class="logo-img" src="assets/images/brew-cafe-logo.png" alt="" width="32" height="32" decoding="async">
+        <span class="brand">BrewCycle Coffee</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" role="navigation" aria-label="Main">
+        <ul>
+          <li><a aria-current="page" href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Welcome">
+      <img class="hero-media" src="assets/images/hero-coffee-truck.jpg" alt="Coffee truck at an outdoor event" decoding="async" fetchpriority="high">
+      <div class="hero-content container">
+        <h1 class="headline">Specialty coffee on wheels.</h1>
+        <p class="lede">BrewCycle Coffee brings barista‑made espresso and seasonal drinks to events and pop‑ups across Australia — crafted fast, served with a smile.</p>
+        <p class="hero-cta">
+          <a class="button" href="schedule.html">Find us this week</a>
+          <a class="button ghost" href="contact.html">Book the truck</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="features container" aria-label="What we serve">
+      <div class="grid-3">
+        <article class="card">
+          <img src="assets/images/latte-art.jpg" alt="Close-up of latte art" loading="lazy" width="600" height="400">
+          <h2>Signature espresso</h2>
+          <p>Ethically sourced beans, dialled‑in daily for rich shots and silky milk.</p>
+        </article>
+        <article class="card">
+          <img src="assets/images/beans-closeup.jpg" alt="Roasted coffee beans" loading="lazy" width="600" height="400">
+          <h2>Seasonal beans</h2>
+          <p>Rotating single origins and house blend roasted for sweetness.</p>
+        </article>
+        <article class="card">
+          <img src="assets/images/barista-pour.jpg" alt="Barista pouring coffee" loading="lazy" width="600" height="400">
+          <h2>Events & catering</h2>
+          <p>From markets to weddings — fast service, friendly crew, great coffee.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="media-banner container" aria-label="Behind the scenes">
+      <video class="promo-video" controls preload="metadata" poster="assets/images/truck-event-1.jpg">
+        <source src="assets/video/latte-art.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <audio class="sr-only" aria-hidden="true" preload="none">
+        <source src="assets/audio/cafe-ambience.mp3" type="audio/mpeg">
+      </audio>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> BrewCycle Coffee · Mobile Coffee Truck · Australia</p>
+      <ul class="social">
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        <li><a href="#" aria-label="Email">hello@brewcycle.coffee</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
